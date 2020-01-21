@@ -30,6 +30,7 @@ spec:
 EOF
 
 $ oc create -f pv_postgresql.yml
+```
 
 ### Deploy postgresql server. It should be done first, because gogs apps will connect to it.
 ```
@@ -43,6 +44,7 @@ $ oc port-forward postgresql-3-lh7bl 5432:5432
 ```
 
 ### Create PostgeSQL PV
+```
 $ cat pv_gogs.yml 
 apiVersion: v1
 kind: PersistentVolume
