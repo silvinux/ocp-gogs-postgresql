@@ -34,7 +34,9 @@ $ oc create -f pv_postgresql.yml
 ### Deploy postgresql server. It should be done first, because gogs apps will connect to it.
 ```
 $ oc new-project gogs
-$ oc new-app postgresql-persistent --param POSTGRESQL_DATABASE=gogs --param POSTGRESQL_USER=gogs --param POSTGRESQL_PASSWORD=gogs --param VOLUME_CAPACITY=1Gi -lapp=gogs_postgresql --insecure-registry
+$ oc new-app postgresql-persistent --param POSTGRESQL_DATABASE=gogs --param POSTGRESQL_USER=gogs\
+--param POSTGRESQL_PASSWORD=gogs --param VOLUME_CAPACITY=1Gi \
+-lapp=gogs_postgresql --insecure-registry
 $ oc port-forward postgresql-3-lh7bl 5432:5432
         $ psql -h127.0.0.1 -Ugogs -W
         $ \l
