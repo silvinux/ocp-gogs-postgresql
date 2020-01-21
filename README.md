@@ -99,5 +99,5 @@ $ ls -la /var/nfsshare/backup-rsync/gogs/20200119/gogs-3-9k7wx/zip/20200119-gogs
 ```
 
 ##### Sources
-https://discuss.gogs.io/t/how-to-backup-restore-and-migrate/991
-https://github.com/silvinux/ocp-tools/blob/master/backup_pvc_gogs.sh
+- https://discuss.gogs.io/t/how-to-backup-restore-and-migrate/991
+- https://github.com/silvinux/ocp-tools/blob/master/backup_pvc_gogs.sh
