@@ -43,7 +43,7 @@ $ oc port-forward postgresql-3-lh7bl 5432:5432
         $ \l
 ```
 
-### Create PostgeSQL PV
+### Create Gogs PV
 ```
 $ cat pv_gogs.yml 
 apiVersion: v1
